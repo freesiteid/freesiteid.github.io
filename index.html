@@ -13,7 +13,7 @@
   <body>
     <center><h1>Javascript</h1></center>
 <br><br>
-<textarea id="cmdrun" class=""></textarea><br><br>
+<textarea id="cmdrun" class="form-control"></textarea><br><br>
 <input onclick="run()" class="btn btn-primary" type="button" value="Info Permission">
 <br>
 <pre>
@@ -31,6 +31,8 @@
   
   function run(){
   var command = document.getElementById("cmdrun");
+  var result = document.getElementById("result");
+  result.value += command;
   }
 </script>
 
