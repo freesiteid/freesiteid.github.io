@@ -11,15 +11,17 @@
     <title>Javascript</title>
   </head>
   <body>
-    <center><h1>Javascript</h1></center>
+    <center><h1>Testing</h1></center>
 <br><br>
-    <h2>Command:</h2><br>
+    <input type="file" id="file">
+    
+  <!--  <h2>Command:</h2><br>
 <textarea id="cmdrun" class="form-control"></textarea><br><br>
 <input onclick="run()" class="btn btn-primary" type="button" value="Info Permission">
 <br><br><pre>
     <div id="result" class="form-control"></div><br><br>
 </pre>
-
+-->
 <script>
 (function () {     
  var script =  document.createElement('script');    
@@ -28,6 +30,10 @@
  script.onload = function () {         
    eruda.init()     
  } })();
+  
+  const file = document.querySelector("#file");
+  console.log(file);
+  
   
   function run(){
   var command = document.getElementById("cmdrun").value;
