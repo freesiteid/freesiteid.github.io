@@ -13,7 +13,7 @@
   <body>
     <center><h1>Testing</h1></center>
 <br><br>
-    <input type="file" id="file">
+    <input type="file" id="file" onchange="fi()">
     
   <!--  <h2>Command:</h2><br>
 <textarea id="cmdrun" class="form-control"></textarea><br><br>
@@ -30,9 +30,10 @@
  script.onload = function () {         
    eruda.init()     
  } })();
-  
+  function fi(){
   const file = document.querySelector("#file");
   console.log(file);
+   }
   
   
   function run(){
